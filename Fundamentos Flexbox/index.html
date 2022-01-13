@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Aprendiendo Flexbox</h1>
+    <h2>Flexbox</h2>
+    <p>Especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). </p>
+    <p>Display:especifica si un elemento es tratado como bloque o en linea. </p>
+    <dl>
+        <dt>Display flex</dt>
+        <dd>Aplican al diseño flexible a los hijos del contenedor. El contenedor con display:flex se comporta como un elemento a nivel de bloque, Es decir llena todo el espacio a lo ancho del contenedor.</dd>
+    </dl>
+    <section class="conteiner">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>   
+    <section class="conteiner">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section> 
+    <br>
+    <dt>Display inline-flex</dt>
+    <dd>Aplican al diseño flexible a los hijos del contenedor. Display:inline-flex hace que el contenedor se comporte como un elemento en línea, es decir, solo llena el espacio que necesite.</dd>
+</dl>
+<section class="conteiner1">
+    <article class="item">Flex Item 1</article>
+    <article class="item">Flex Item 2</article>
+    <article class="item">Flex Item 3</article>
+</section>   
+<section class="conteiner1">
+    <article class="item">Flex Item 1</article>
+    <article class="item">Flex Item 2</article>
+    <article class="item">Flex Item 3</article>
+</section> 
+<br>
+<hr>
+    <dl>    
+    <dt>Flex-direction</dt>
+       <dd>Define cómo se ordenan los elementos de flexbox dentro de un contenedor de flexbox .</dd>
+    <br>
+    <dt>Row</dt>
+        <dd>(Predeterminado): de izquierda a derecha en ltr; de derecha a izquierda enrtl </dd>
+    </dl>
+    <section class="conteiner2">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>   
+    <section class="conteiner2">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <dl> 
+    <dt>Row-reverse</dt>
+    <dd>De derecha a izquierda adentro ltr; de izquierda a derecha enrtl </dd>
+    </dl>
+    <section class="conteiner3">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>   
+    <section class="conteiner3">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <br> 
+    <dt>Colunm</dt>
+    <dd>Igual que row pero de arriba a abajo.</dd>
+    </dl>
+    <section class="conteiner4">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>   
+    <br>
+    <section class="conteiner4">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section> 
+    <br>
+    <dt>Colunm-reverse</dt>
+    <dd>Igual que row-reverse pero de abajo hacia arriba.</dd>
+    </dl>
+    <section class="conteiner5">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <br>   
+    <section class="conteiner5">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section> 
+    <hr>
+    <dl>    
+    <dt>Flex-wrap</dt>
+       <dd>De forma predeterminada, todos los elementos flexibles intentarán encajar en una línea. Puede cambiar eso y permitir que los elementos se ajusten según sea necesario con esta propiedad.</dd>
+    <br>
+    <dt>Nowrap</dt>
+        <dd>(predeterminado): todos los elementos flexibles estarán en una línea</dd>
+    </dl>
+    <section class="conteiner6">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>   
+    <br>
+    <section class="conteiner6">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <br>
+    <section class="conteiner6">
+        <article class="item">item 1</article>
+        <article class="item">item 2</article>
+        <article class="item">item 3</article>
+        <article class="item">item 4</article>
+        <article class="item">item 5</article>
+        <article class="item">item 6</article>
+        <article class="item">item 7</article>
+        <article class="item">item 8</article>
+        <article class="item">item 9</article>
+        <article class="item">item 10</article>
+        <article class="item">item 11</article>
+        <article class="item">item 12</article>
+        <article class="item">item 13</article>
+        <article class="item">item 14</article>
+        <article class="item">item 15</article>
+        <article class="item">item 16</article>
+        <article class="item">item 17</article>
+        <article class="item">item 18</article>
+        <article class="item">item 19</article>
+    </section>
+    <dl>
+        <dt>Wrap</dt>
+        <dd>los elementos flexibles se envolverán en varias líneas, de arriba a abajo.</dd>
+    </dl>
+    <section class="conteiner7">
+        <article class="item">item 1</article>
+        <article class="item">item 2</article>
+        <article class="item">item 3</article>
+        <article class="item">item 4</article>
+        <article class="item">item 5</article>
+        <article class="item">item 6</article>
+        <article class="item">item 7</article>
+        <article class="item">item 8</article>
+        <article class="item">item 9</article>
+        <article class="item">item 10</article>
+        <article class="item">item 11</article>
+        <article class="item">item 12</article>
+        <article class="item">item 13</article>
+        <article class="item">item 14</article>
+        <article class="item">item 15</article>
+        <article class="item">item 16</article>
+        <article class="item">item 17</article>
+        <article class="item">item 18</article>
+        <article class="item">item 19</article>
+    </section>
+    </section>
+    <dl>
+    <hr>
+    <h2>Alineacion y/o Distribucion de los elementos</h2> 
+    <dt>Justify-content (main axis)</dt>
+    <dd>Esto define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre adicional que queda cuando todos los elementos flexibles de una línea son inflexibles o son flexibles pero han alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los elementos cuando desbordan la línea.</dd>
+    <br>
+    <dt>Flex-start</dt>
+     <dd>los elementos se empaquetan hacia el inicio de la dirección flexible.</dd>
+    </dl>
+    <section class="conteiner8">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>   
+ <br>
+ <section class="conteiner8">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>
+ <br>
+ <section class="conteiner8">
+     <article class="item">item 1</article>
+     <article class="item">item 2</article>
+     <article class="item">item 3</article>
+     <article class="item">item 4</article>
+     <article class="item">item 5</article>
+     <article class="item">item 6</article>
+     <article class="item">item 7</article>
+     <article class="item">item 8</article>
+     <article class="item">item 9</article>
+     <article class="item">item 10</article>
+     <article class="item">item 11</article>
+     <article class="item">item 12</article>
+     <article class="item">item 13</article>
+     <article class="item">item 14</article>
+     <article class="item">item 15</article>
+     <article class="item">item 16</article>
+     <article class="item">item 17</article>
+     <article class="item">item 18</article>
+     <article class="item">item 19</article>
+ </section>
+ <dl>
+    <br>
+    <dt>Center</dt>
+     <dd>los elementos están centrados a lo largo de la línea.</dd>
+    </dl>
+    <section class="conteiner9">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>   
+ <br>
+ <section class="conteiner9">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>
+ <section class="conteiner9">
+    <article class="item">item 1</article>
+    <article class="item">item 2</article>
+    <article class="item">item 3</article>
+    <article class="item">item 4</article>
+    <article class="item">item 5</article>
+    <article class="item">item 6</article>
+    <article class="item">item 7</article>
+    <article class="item">item 8</article>
+    <article class="item">item 9</article>
+    <article class="item">item 10</article>
+    <article class="item">item 11</article>
+    <article class="item">item 12</article>
+    <article class="item">item 13</article>
+    <article class="item">item 14</article>
+    <article class="item">item 15</article>
+    <article class="item">item 16</article>
+    <article class="item">item 17</article>
+    <article class="item">item 18</article>
+    <article class="item">item 19</article>
+</section>
+ <br>
+ <br>
+    <dt>Flex-end</dt>
+     <dd>los artículos se empaquetan hacia el final de la dirección de flexión.</dd>
+    </dl>
+    <section class="conteiner10">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>   
+ <br>
+ <section class="conteiner10">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>
+ <br>
+ <br>
+ <dt>Space-between</dt>
+  <dd>los artículos se distribuyen uniformemente en la línea; el primer elemento está en la línea de inicio, el último elemento en la línea final</dd>
+ </dl>
+ <section class="conteiner11">
+  <article class="item">Flex Item 1</article>
+  <article class="item">Flex Item 2</article>
+  <article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner11">
+  <article class="item">Flex Item 1</article>
+  <article class="item">Flex Item 2</article>
+  <article class="item">Flex Item 3</article>
+</section>
+<br>
+<br>
+    <dt>Space-around</dt>
+     <dd>los elementos se distribuyen uniformemente en la línea con el mismo espacio alrededor. Tenga en cuenta que visualmente los espacios no son iguales, ya que todos los elementos tienen el mismo espacio en ambos lados. El primer elemento tendrá una unidad de espacio contra el borde del contenedor, pero dos unidades de espacio entre el siguiente elemento porque el siguiente elemento tiene su propio espacio que se aplica.</dd>
+    </dl>
+    <section class="conteiner12">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>   
+ <br>
+ <section class="conteiner12">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>
+ <br>
+ <br>
+    <dt>Space-evenly</dt>
+     <dd>los elementos se distribuyen de modo que el espacio entre dos elementos cualesquiera (y el espacio hasta los bordes) sea igual.</dd>
+    </dl>
+    <section class="conteiner13">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>   
+ <br>
+ <section class="conteiner13">
+     <article class="item">Flex Item 1</article>
+     <article class="item">Flex Item 2</article>
+     <article class="item">Flex Item 3</article>
+ </section>
+ <br>
+ <hr>
+ <dt>Aling-items (Cross Axis)</dt>
+ <dd>Esto define el comportamiento predeterminado de cómo se distribuyen los elementos flexibles a lo largo del eje transversal en la línea actual. Piense en ello como la justify-content versión para el eje transversal (perpendicular al eje principal).</dd>
+ <br>
+ <dt>Stretch</dt>
+<dd>(Predeterminado): estirar para llenar el contenedor (aún respetando el ancho mínimo / ancho máximo)</dd>
+</dl>
+<section class="conteiner14">
+<article class="item14">Flex Item 1</article>
+<article class="item14">Flex Item 2</article>
+<article class="item14">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner14">
+<article class="item14">Flex Item 1</article>
+<article class="item14">Flex Item 2</article>
+<article class="item14">Flex Item 3</article>
+</section>
+<dt>Flex-start</dt>
+  <dd>flex-start/ start/ self-start: Elementos se colocan en el inicio del eje transversal. La diferencia entre estos es sutil y se trata de respetar las flex-directionreglas o las writing-modereglas.</dd>
+ </dl>
+ <section class="conteiner15">
+  <article class="item">Flex Item 1</article>
+  <article class="item">Flex Item 2</article>
+  <article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner15">
+  <article class="item">Flex Item 1</article>
+  <article class="item">Flex Item 2</article>
+  <article class="item">Flex Item 3</article>
+</section>
+<br>
+ <dt>Flex-end</dt>
+  <dd>flex-end/ end/ self-end: Elementos se colocan en el extremo del eje transversal. De nuevo, la diferencia es sutil y se trata de respetar las flex-directionreglas frente a las writing-modereglas.</dd>
+ </dl>
+ <section class="conteiner16">
+  <article class="item">Flex Item 1</article>
+  <article class="item">Flex Item 2</article>
+  <article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner16">
+  <article class="item">Flex Item 1</article>
+  <article class="item">Flex Item 2</article>
+  <article class="item">Flex Item 3</article>
+</section>
+<br>
+<dt>Center</dt>
+<dd>los elementos están centrados en el eje transversal</dd>
+</dl>
+<section class="conteiner17">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner17">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<br>
+<dt>Baseline</dt>
+<dd> los elementos están alineados, tal como sus líneas de base se alinean</dd>
+</dl>
+<section class="conteiner18">
+<article class="item14">Flex Item 1</article>
+<article class="item14">Flex Item 2</article>
+<article class="item14">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner18">
+<article class="item14">Flex Item 1</article>
+<article class="item14">Flex Item 2</article>
+<article class="item14">Flex Item 3</article>
+</section>
+<br>
+<hr>
+<dt>Aling-content </dt>
+ <dd>Esto alinea las líneas de un contenedor flexible dentro cuando hay espacio adicional en el eje transversal, similar a cómo justify-contentalinea elementos individuales dentro del eje principal.</dd>
+ <br>
+ <dt>Flex-start</dt>
+<dd>Artículos empaquetados al inicio del contenedor. El (más apoyado) flex-starthonra el flex-directionmientras starthonra la writing-modedirección.</dd>
+</dl>
+<section class="conteiner20">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner20">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<br>
+<dt>Flex-end</dt>
+<dd>flex-end/ end: artículos empaquetados hasta el final del contenedor. El (más apoyo) flex-endhonra el flex-directionmientras que el final honra la writing-modedirección.</dd>
+</dl>
+<section class="conteiner21">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner21">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<dt>Center</dt>
+<dd>Elementos centrados en el contenedor</dd>
+</dl>
+<section class="conteiner22">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner22">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<dt>Space-between:</dt>
+<dd> Artículos distribuidos uniformemente; la primera línea está al comienzo del contenedor mientras que la última está al final</dd>
+</dl>
+<section class="conteiner23">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner23">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<br>
+<section class="conteiner23">
+    <article class="item">item 1</article>
+    <article class="item">item 2</article>
+    <article class="item">item 3</article>
+    <article class="item">item 4</article>
+    <article class="item">item 5</article>
+    <article class="item">item 6</article>
+    <article class="item">item 7</article>
+    <article class="item">item 8</article>
+    <article class="item">item 9</article>
+    <article class="item">item 10</article>
+    <article class="item">item 11</article>
+    <article class="item">item 12</article>
+    <article class="item">item 13</article>
+    <article class="item">item 14</article>
+    <article class="item">item 15</article>
+    <article class="item">item 16</article>
+    <article class="item">item 17</article>
+    <article class="item">item 18</article>
+    <article class="item">item 19</article>
+</section>
+<dt>Space-around</dt>
+<dd> elementos distribuidos uniformemente con el mismo espacio alrededor de cada línea</dd>
+</dl>
+<section class="conteiner24">
+<article c8lass="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner24">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<br>
+<section class="conteiner24">
+    <article class="item">item 1</article>
+    <article class="item">item 2</article>
+    <article class="item">item 3</article>
+    <article class="item">item 4</article>
+    <article class="item">item 5</article>
+    <article class="item">item 6</article>
+    <article class="item">item 7</article>
+    <article class="item">item 8</article>
+    <article class="item">item 9</article>
+    <article class="item">item 10</article>
+    <article class="item">item 11</article>
+    <article class="item">item 12</article>
+    <article class="item">item 13</article>
+    <article class="item">item 14</article>
+    <article class="item">item 15</article>
+    <article class="item">item 16</article>
+    <article class="item">item 17</article>
+    <article class="item">item 18</article>
+    <article class="item">item 19</article>
+</section>
+<dt>Space-evenly:</dt>
+<dd>Los elementos se distribuyen uniformemente con el mismo espacio a su alrededor</dd>
+</dl>
+<section class="conteiner25">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner25">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<br>
+<section class="conteiner25">
+    <article class="item">item 1</article>
+    <article class="item">item 2</article>
+    <article class="item">item 3</article>
+    <article class="item">item 4</article>
+    <article class="item">item 5</article>
+    <article class="item">item 6</article>
+    <article class="item">item 7</article>
+    <article class="item">item 8</article>
+    <article class="item">item 9</article>
+    <article class="item">item 10</article>
+    <article class="item">item 11</article>
+    <article class="item">item 12</article>
+    <article class="item">item 13</article>
+    <article class="item">item 14</article>
+    <article class="item">item 15</article>
+    <article class="item">item 16</article>
+    <article class="item">item 17</article>
+    <article class="item">item 18</article>
+    <article class="item">item 19</article>
+</section>
+<dt>Stretch</dt>
+<dd>Las líneas se estiran para ocupar el espacio restante</dd>
+</dl>
+<section class="conteiner26">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>   
+<br>
+<section class="conteiner26">
+<article class="item">Flex Item 1</article>
+<article class="item">Flex Item 2</article>
+<article class="item">Flex Item 3</article>
+</section>
+<hr>
+<dt>Factor de crecimiento (flex-grow)</dt>
+ <dd>Esto define la capacidad de un artículo flexible para crecer si es necesario. Acepta un valor sin unidades que sirve como proporción. Dicta la cantidad de espacio disponible dentro del contenedor flexible que debe ocupar el artículo.</dd>
+ <br>
+ <dt>Flex-grow</dt>
+<dd>Si todos los elementos se han flex-grow establecido en 1, el espacio restante en el contenedor se distribuirá por igual a todos los hijos. Si uno de los niños tiene un valor de 2, ese hijo ocuparía el doble del espacio de uno de los otros (o lo intentará, al menos). Los números negativos no son válidos.</dd>
+</dl>
+<section class="conteiner27">
+<article class="item27">Flex Item 1</article>
+<article class="item27">Flex Item 2</article>
+<article class="item27">Flex Item 3</article>
+</section>
+<br> 
+<section class="conteiner27">
+    <article class="item27-1">Flex Item 1</article>
+    <article class="item27-1">Flex Item 2</article>
+    <article class="item27-1">Flex Item 3</article>
+    </section>    
+<br>
+<section class="conteiner27">
+    <article class="item27-2">Flex Item 1</article>
+    <article class="item27-2">Flex Item 2</article>
+    <article class="item27-2">Flex Item 3</article>
+    </section>    
+<br>
+<dt>Flex-shrink</dt>
+<dd>Esto define la capacidad de un artículo flexible de encogerse si es necesario. Los números negativos no son válidos.</dd>
+</dl>
+<section class="conteiner28">
+<article class="item28">Flex Item 1</article>
+<article class="item28">Flex Item 2</article>
+<article class="item28">Flex Item 3</article>
+</section>   
+<br>
+<dt>Flex-basis</dt>
+<dd>sto define el tamaño predeterminado de un elemento antes de que se distribuya el espacio restante. Si se establece en 0, el espacio adicional alrededor del contenido no se tiene en cuenta. Si se establece en auto, el espacio adicional se distribuye en función de su flex-growvalor.</dd>
+</dl>
+<section class="conteiner29">
+<article class="item29">Flex Item 1</article>
+<article class="item29">Flex Item 2</article>
+<article class="item29">Flex Item 3</article>
+</section>   
+<br>
+<hr>
+<dt>Orden y Alineacion de hijos flexbox  (order y aling-self)</dt>
+<br> 
+<dd>Esto define la capacidad de un artículo flexible para crecer si es necesario. Acepta un valor sin unidades que sirve como proporción. Dicta la cantidad de espacio disponible dentro del contenedor flexible que debe ocupar el artículo.</dd>
+ <br>
+ <dt>Order</dt>
+<dd>Representa el orden que tendran los elementos hijos en la caja flebox. Valor por defecto-0. Se aceptaran valores positivos y negativos. Un valor menor siempre ira antes que un valor mayor.</dd>
+</dl>
+<section class="conteiner30">
+<article class="item30">Flex Item 1</article>
+<article class="item30">Flex Item 2</article>
+<article class="item30">Flex Item 3</article>
+<article class="item30">Flex Item 4</article>
+<article class="item30">Flex Item 5</article>
+</section>
+<br>
+<dt>Alint-self</dt>
+<dd>Sobreescribe el valor  de la propiedad aling-items solo para el elemento hijo especificado</dd>
+<section class="conteiner31">
+<article class="item31">Flex Item 1</article>
+<article class="item31">Flex Item 2</article>
+<article class="item31">Flex Item 3</article>
+<article class="item31">Flex Item 4</article>
+<article class="item31">Flex Item 5</article>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,379 @@
+*,
+*::after,
+*::before{
+box-sizing: border-box;
+}
+
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner {
+    background-color: rgb(163, 150, 150);
+    display: flex;
+}
+
+.conteiner1 {
+    background-color: rgb(163, 150, 150);
+    display: inline-flex;
+}
+
+.conteiner2 {
+    background-color: rgb(163, 150, 150);
+    display: flex;
+    flex-direction: row;
+}
+
+.conteiner3 {
+    background-color: rgb(163, 150, 150);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.conteiner4 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner5 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.conteiner6 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row; /*colunm*/
+    flex-wrap: nowrap;
+}
+
+.conteiner7 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row; /*colunm*/
+    flex-wrap: Wrap;
+    /*flex-flow: column wrap;/ es un shortcut de flexdirection y flex-wrap*/
+}
+
+.conteiner8 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap; /*column wrap*/
+    justify-content: flex-start; /*center| flex-end | space-between | space-around | space-evely*/
+}
+
+.conteiner9 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;/*column wrap*/
+    justify-content: center; /*center| flex-end | space-between | space-around | space-evely*/
+}
+
+.conteiner10 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;/*column wrap*/
+    justify-content: flex-end; /*center| flex-end | space-between | space-around | space-evely*/
+}
+
+.conteiner11 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;/*column wrap*/
+    justify-content: space-between; /*center| flex-end | space-between | space-around | space-evely*/
+}
+
+.conteiner12 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;/*column wrap*/
+    justify-content: space-around; /*center| flex-end | space-between | space-around | space-evely*/
+}
+
+.conteiner13 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;/*column wrap*/
+    justify-content: space-evenly; /*center| flex-end | space-between | space-around | space-evely*/
+}
+
+.conteiner14 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row nowrap; /*column wrap | aling-items solo funciona con row nowrap*/
+    justify-content: flex-start;
+    align-items: stretch; 
+}
+
+.conteiner15 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row nowrap; /*column wrap*/
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+
+.conteiner16 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row nowrap; /*column wrap*/
+    justify-content: flex-start;
+    align-items: flex-end; 
+}
+
+.conteiner17 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row nowrap; /*column wrap*/
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.conteiner18 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row nowrap; /*column wrap*/
+    justify-content: flex-start;
+    align-items: baseline; 
+}
+
+.conteiner20 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap; /*align-content solo funciona con row wrap*/
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start; 
+}
+
+.conteiner21{
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-end; 
+}
+.conteiner22 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center; 
+}
+.conteiner23 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between; 
+}
+.conteiner24 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around; 
+}
+.conteiner25 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-evenly; 
+}
+.conteiner26 {
+    background-color: rgb(163, 150, 150);
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: Wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch; 
+}
+
+.conteiner27,
+.conteiner28,
+.conteiner29,
+.conteiner30, 
+.conteiner31 {
+    background-color: rgb(163, 150, 150);
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    flex-flow: row nowrap; /*column nowrap*/
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start; 
+}
+
+
+.item {
+    background-color: #666;
+    border: medium solid #999;
+    width: 20%;
+    height: 20%;
+}
+
+.item14 {
+    background-color: #666;
+    border: medium solid #999;
+}
+
+.item14:nth-child(2) {
+    font-size: 250%;
+}
+
+.item27 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 1; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;/*flexible*/
+}
+
+.item27-1 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 1; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;/*flexible*/
+}
+
+.item27-1:nth-child(2){
+    flex-grow: 2;
+} 
+
+.item27-2 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 1; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;/*flexible*/
+}
+
+.item27-2:nth-child(2){
+    flex-grow: 3;
+} 
+
+.item27-2:nth-child(3){
+    flex-grow: 2;
+} 
+
+.item28 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 0; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;
+    
+}
+
+.item28:nth-child(2){
+    flex-shrink: 2;
+} 
+
+.item29 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 0; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;
+    flex: 0 1 150px; /*Se recomienda que utilice esta propiedad abreviada en*/                                
+}
+
+.item30 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 0; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;
+    flex: 0 1 150px; /*Se recomienda que utilice esta propiedad abreviada en*/  
+    order: 0;                              
+}
+
+.item30:nth-child(2){
+    order: 1; /*acepta numeros negativos*/
+} 
+
+.item31 {
+    background-color: #666;
+    border: medium solid #999;
+    flex-grow: 0; /*crecimiento*/
+    flex-shrink: 1;/*reduce*/
+    flex-basis: auto;
+    flex: 0 1 150px; /*Se recomienda que utilice esta propiedad abreviada en*/  
+    order: 0; 
+    align-self: stretch;                             
+}
+
+.item31:nth-child(3){
+    align-self: flex-start;    
+} 
